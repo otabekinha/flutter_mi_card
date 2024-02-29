@@ -45,22 +45,22 @@ class MyApp extends StatelessWidget {
                     color: Colors.teal.shade100,
                   ),
                 ),
-                Container(
+                const SizedBox(
                   width: 100,
-                  child: const Divider(
+                  child: Divider(
                     color: Colors.white54,
                   ),
                 ),
                 const SizedBox(height: 10),
                 const Card(
-                  margin: const EdgeInsets.symmetric(horizontal: 20),
+                  margin: EdgeInsets.symmetric(horizontal: 20),
                   child: ListTile(
                     leading: Icon(Icons.phone),
                     title: Text('+8210 5605 9499'),
                   ),
                 ),
                 const Card(
-                  margin: const EdgeInsets.all(20),
+                  margin: EdgeInsets.all(20),
                   child: ListTile(
                     leading: Icon(Icons.email),
                     title: Text('otabekinha@gmail.com'),
