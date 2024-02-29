@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
                   'Otabek Abdurakhmonov',
                   style: TextStyle(
                     fontFamily: 'Pacifico',
-                    fontSize: 28,
+                    fontSize: 30,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
@@ -37,10 +37,12 @@ class MyApp extends StatelessWidget {
                 const SizedBox(height: 5),
                 Text(
                   'Flutter Developer'.toUpperCase(),
-                  style: const TextStyle(
+                  style: TextStyle(
+                    fontFamily: 'SourceSans3',
                     fontSize: 18,
+                    letterSpacing: 2.5,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white54,
+                    color: Colors.teal.shade100,
                   ),
                 ),
                 Container(
@@ -50,54 +52,18 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 10),
-                Container(
+                const Card(
                   margin: const EdgeInsets.symmetric(horizontal: 20),
-                  padding: const EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: const Row(
-                    children: [
-                      Icon(
-                        Icons.phone,
-                        color: Colors.teal,
-                      ),
-                      SizedBox(width: 40),
-                      Text(
-                        '+8210 5605 9499',
-                        style: TextStyle(
-                          color: Colors.teal,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
+                  child: ListTile(
+                    leading: Icon(Icons.phone),
+                    title: Text('+8210 5605 9499'),
                   ),
                 ),
-                Container(
+                const Card(
                   margin: const EdgeInsets.all(20),
-                  padding: const EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: const Row(
-                    children: [
-                      Icon(
-                        Icons.email,
-                        color: Colors.teal,
-                      ),
-                      SizedBox(width: 40),
-                      Text(
-                        'otabekinha@gmail.com',
-                        style: TextStyle(
-                          color: Colors.teal,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
+                  child: ListTile(
+                    leading: Icon(Icons.email),
+                    title: Text('otabekinha@gmail.com'),
                   ),
                 ),
               ],
